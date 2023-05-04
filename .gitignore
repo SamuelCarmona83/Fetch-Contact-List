@@ -2,6 +2,7 @@
 .*
 
 # track this file .gitignore (i.e. do NOT ignore it)
+!.devcontainer
 !.gitignore
 !.github
 php_errorlog
