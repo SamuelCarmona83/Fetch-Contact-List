@@ -23,7 +23,7 @@ export const ContactCard = props => {
 				<div className="col-12 col-sm-6 col-md-3 px-0">
 					<img
 						src={props.contactItem.imagen}
-						alt={props.contactItem.fullName}
+						alt={props.contactItem.full_name}
 						className="rounded-circle mx-auto d-block img-fluid"
 						style={{ width: "150px", height: "150px" }}
 					/>
@@ -43,7 +43,7 @@ export const ContactCard = props => {
 							<i className="fas fa-trash-alt" />
 						</button>
 					</div>
-					<label className="name lead">{props.contactItem.fullName}</label>
+					<label className="name lead">{props.contactItem.full_name}</label>
 					<br />
 					<i className="fas fa-map-marker-alt text-muted mr-3" />
 					<span className="text-muted">{props.contactItem.address}</span>
@@ -91,7 +91,7 @@ ContactCard.defaultProps = {
 	contactItem: {
 		id: 0,
 		imagen: MikePhoto,
-		fullName: "Rafael Jimenez",
+		full_name: "Rafael Jimenez",
 		email: "rjmoreno2022@gmail.com",
 		agenda_slug: "Agenda",
 		address: "5842 Hillcrest Rd",

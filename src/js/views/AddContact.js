@@ -9,7 +9,7 @@ export const AddContact = () => {
 		id: 0,
 		imagen:
 			"https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049569.jpg?w=740&t=st=1682895038~exp=1682895638~hmac=ca33bcd0e0441e977c6ee1aac60c6e86f44c146c68def83605e0c1102b4282d4",
-		fullName: "",
+		full_name: "",
 		email: "",
 		agenda_slug: "",
 		address: "",
@@ -32,11 +32,11 @@ export const AddContact = () => {
 						<label>Full Name</label>
 						<input
 							type="text"
-							value={item.fullName || ""}
+							value={item.full_name || ""}
 							onChange={event => {
 								setItem({
 									...item,
-									fullName: event.target.value
+									full_name: event.target.value
 								});
 							}}
 							className="form-control rounded-0"
@@ -93,7 +93,7 @@ export const AddContact = () => {
 						/>
 					</div>
 					<button
-						onClick={() => (item.fullName != "" ? AddNewContact() : () => {})}
+						onClick={() => (item.full_name != "" ? AddNewContact() : () => {})}
 						type="button"
 						className="btn btn-primary form-control"
 						style={{ backgroundColor: "teal", border: 0 }}>
